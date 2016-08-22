@@ -1,0 +1,20 @@
+      (ii) cargo-ants-ros-pkgs/cargo_ants_local_mapping
+            1) REQUIRES: laserscanutils and cargo_ants_local_mapping
+            
+            
+            LASER SCAN UTILS:
+            
+                    (i) laserscanutils (master branch)
+            1) git -c http.sslVerify=false clone https://gitlab.iri.upc.edu/mobile_robotics/laser_scan_utils.git
+            2) cd laser_scan_utils
+            3) mkdir build
+            4) cd build
+            5) cmake ..
+            6) make
+            7) sudo make install   
+            
+            CARGO_ANTS_LOCAL_MAPPING:
+            
+                    
+                    
+                    
