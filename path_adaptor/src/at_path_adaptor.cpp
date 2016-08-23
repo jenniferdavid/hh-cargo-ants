@@ -201,7 +201,7 @@ int main(int argc, char **argv)
 		//std::cout << "Ros time %" << rtime ;
 		if (tfl_.waitForTransform("odom","at_base_link", rtime, ros::Duration(5.))  )
 		{
-			tfl_.lookupTransform("odom","agv_base_link", rtime, Tstmp); 	
+			tfl_.lookupTransform("odom","at_base_link", rtime, Tstmp); 	
             
 			//set homogeneous matrix, passing through a rotation matrix
 			Rmat.setRotation(Tstmp.getRotation());

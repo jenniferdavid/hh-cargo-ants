@@ -199,7 +199,7 @@ int main(int argc, char **argv)
 		ros::spinOnce();
 		rtime = ros::Time::now();
 		//std::cout << "Ros time %" << rtime ;
-		if (tfl_.waitForTransform("odom","at_base_link", rtime, ros::Duration(5.))  )
+		if (tfl_.waitForTransform("odom","agv_base_link", rtime, ros::Duration(5.))  )
 		{
 			tfl_.lookupTransform("odom","agv_base_link", rtime, Tstmp); 	
             
